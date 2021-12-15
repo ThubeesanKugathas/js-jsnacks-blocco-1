@@ -5,9 +5,9 @@ let due = 0;
 
 for (let i = 0; i < 1000; i++) {
 
-    if (due < 1000) {
-        due = Math.pow(2, i);
-    } else {
+    due = Math.pow(2, i);
+
+    if (due >= 1000) {
         break;
     }
 
