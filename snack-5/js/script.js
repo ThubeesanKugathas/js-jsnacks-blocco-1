@@ -7,7 +7,10 @@ let sum = 0;
 
 do {
     const number = prompt('inserisci un numero');
-    sum += parseInt(number); 
+    array.push(number);
+
+
+    sum += parseInt(array); 
 
     console.log('La somma non è ancora 50');
 
