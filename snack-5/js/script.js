@@ -17,7 +17,6 @@ do {
 
 
 if (sum === 50) {
-
     outputHtml.innerHTML += 'la somma è esattamente 50';
 } else {
     outputHtml.innerHTML += 'la somma ha superato 50';
