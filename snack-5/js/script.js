@@ -11,10 +11,14 @@ do {
     array.push(number);
     outputHtml.innerHTML += `cifra inserita per la somma: ${number} </br>`;
 
-    sum += parseInt(array); 
-
-    console.log('La somma non è ancora 50');
+    sum += parseInt(number); 
 
 } while (sum < 50)
 
-outputHtml.innerHTML += 'la somma ha superato 50';
+
+if (sum === 50) {
+
+    outputHtml.innerHTML += 'la somma è esattamente 50';
+} else {
+    outputHtml.innerHTML += 'la somma ha superato 50';
+}
