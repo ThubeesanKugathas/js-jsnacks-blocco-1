@@ -5,9 +5,14 @@ const number = prompt('inserisci un numero di 4 cifre');
 
 let sum = 0;
 
-for (let i = 0; i < number.length; i++) {
+if (number.length === 4) {
 
-    sum += parseInt(number[i]);
+    for (let i = 0; i < number.length; i++) {
+    
+        sum += parseInt(number[i]);
+    }
+    
+    console.log('la somma delle cifre del numero è:', sum);
+} else {
+    console.log('riprova ed inserisci solo 4 cifre');
 }
-
-console.log('la somma delle cifre del numero è:', sum);
